@@ -1,0 +1,39 @@
+{
+  "name": "images_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "jasmine": "jasmine",
+    "lint": "eslint . --ext .ts",
+    "test": "npx tsc && jasmine",
+    "nodemon": "nodemon src/index.ts",
+    "prettier": "prettier --write \"./src/**/*.ts\"",
+    "start": "npx tsc && prettier --write \"./src/**/*.ts\" && jasmine && eslint . --ext .ts && nodemon src/index.ts"
+  },
+  "author": "OSroot",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sharp": "^0.31.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.15",
+    "@types/jasmine": "^4.3.1",
+    "@types/node": "^18.11.16",
+    "@types/sharp": "^0.31.0",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jasmine": "^4.5.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.1",
+    "supertest": "^6.3.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  }
+}

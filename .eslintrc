@@ -1,0 +1,30 @@
+{
+    "root": true,
+    "plugins": [
+      "prettier"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "prettier",
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+      "prettier/prettier": 0 ,
+      "no-use-before-define": ["error", { "functions": true, "classes": true }],
+      "no-var": 2,
+      "no-undef": 0,
+      "prefer-const": "error",
+      "no-useless-catch":0,
+      "@typescript-eslint/no-unused-vars":0    },
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module",
+      "allowImportExportEverywhere": true
+
+    },
+    "env": {
+      "node": true,
+      "es6": true
+    }
+}
